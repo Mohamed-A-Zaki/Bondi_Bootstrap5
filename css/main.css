@@ -1,0 +1,191 @@
+:root {
+  --main-color: #19283f;
+  --secon-color: #33d1cc;
+  --alt-color: #ffc400;
+  --section-padding: 5rem;
+  --section-color: #eff7fa;
+  --main-transition: 0.3s;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* height: 7000px; */
+}
+/* start components */
+.main-btn {
+  color: var(--alt-color);
+}
+.main-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background-color: var(--secon-color);
+}
+/* end components */
+/* start navbar */
+.navbar {
+  background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--secon-color);
+}
+.navbar .search {
+  color: var(--secon-color);
+  border-left: 1px solid var(--secon-color);
+}
+/* end navbar */
+/* strat landing */
+.landing {
+  background-color: var(--main-color);
+}
+/* end landing */
+/* start featues */
+.features {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.features .feat h3 {
+  color: var(--alt-color);
+}
+.features .feat .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .feat .icon {
+  font-size: 4rem;
+  color: var(--secon-color);
+}
+/* end featues */
+/* start our work */
+.our-work {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-color);
+}
+.our-work ul li {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.our-work ul li.active,
+.our-work ul li:hover {
+  color: var(--alt-color);
+  background-color: #dc3545;
+}
+.our-work .box::after {
+  content: attr(work);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0.5rem);
+  background-color: rgb(51 209 204 / 40%);
+  transform: translateX(calc(-100% - 0.25rem));
+  transition: var(--main-transition);
+}
+.our-work .box:hover::after {
+  transform: translate(0);
+}
+/* end our work */
+/* start about us */
+.about {
+  padding-top: var(--section-padding);
+}
+.about .desc {
+  width: 500px;
+  max-width: 100%;
+}
+/* end about us */
+/* start our team */
+.our-team {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-color);
+}
+.our-team .heaging h2 {
+  color: var(--alt-color);
+}
+.our-team .box h4 {
+  background-color: var(--secon-color);
+}
+/* end our team */
+/* start tech */
+.tech {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+/* end tech */
+/* start project */
+.project {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--main-color);
+}
+/* end project */
+/* start blog */
+.blog {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+/* end blog */
+/* start contact */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--alt-color);
+}
+.contact input {
+  outline: none;
+  caret-color: white;
+}
+.contact input::placeholder {
+  color: #fff;
+}
+.contact input:focus::placeholder {
+  opacity: 0;
+}
+/* end contact */
+/* start footer */
+.footer {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--main-color);
+}
+.footer .name {
+  color: var(--secon-color);
+}
+.footer .logo {
+  color: var(--alt-color);
+}
+.footer svg {
+  width: 20px;
+  height: 20px;
+  transition: calc(var(--main-transition) * 2);
+}
+.footer svg:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+.footer svg.fa-facebook-f {
+  background-color: #1877f2;
+}
+.footer svg.fa-twitter {
+  background-color: #1877f2;
+}
+.footer svg.fa-linkedin-in {
+  background-color: #0077b5;
+}
+.footer svg.fa-youtube {
+  background-color: #ff0000;
+}
+/* end footer */
